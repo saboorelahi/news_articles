@@ -4,6 +4,7 @@ After installing docker use the command
 
 ### `docker-compose up --build`
 
+* 3000 port should be available
 --------
 
  If docker cause any issue, use the command
