@@ -15,7 +15,6 @@ export const fetchNews = createAsyncThunk<NewsArticle[]>(
     const response = await axios.get<NewsApiResponse>(`${BASE_URL}/top-headlines`, {
       params: { country: "us", apiKey: NEWS_API_KEY },
     });
-    console.log('heterui')
     return response.data.articles;
   }
 );
