@@ -12,9 +12,13 @@ interface NewsApiResponse {
 export const fetchNews = createAsyncThunk<NewsArticle[]>(
   "news/fetchNews",
   async () => {
-    const response = await axios.get<NewsApiResponse>(`${BASE_URL}/top-headlines`, {
-      params: { country: "us", apiKey: NEWS_API_KEY },
-    });
-    return response.data.articles;
+    try {
+      const response = await axios.get<NewsApiResponse>(`${BASE_URL}/top-headlines`, {
+        params: { country: "us", apiKey: NEWS_API_KEY },
+      });
+      return response.data.articles;
+    } catch (err) {
+      // show notification
+    }
   }
 );
