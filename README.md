@@ -18,3 +18,7 @@ so tried GNEWS api (https://gnews.io/docs/v4#top-headlines-endpoint), but the nu
 the code but implementation is there. For first two NewsAPI, Newyork times, its working.
 
 Some further improvements can be made as per time need.
+
+--------
+
+<img width="1698" alt="image" src="https://github.com/user-attachments/assets/76584ef7-c7fe-4228-b565-438653fc83aa" />
